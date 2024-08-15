@@ -7,3 +7,6 @@ CHART_CHOICES = (
 )
 
 # define class-based Form
+class SalesSearchForm(forms.Form):	
+    book_title= forms.CharField(max_length=120)
+    chart_type = forms.ChoiceField(choices=CHART_CHOICES)
